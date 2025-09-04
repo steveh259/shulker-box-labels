@@ -1,0 +1,15 @@
+name: Other
+description: Create a new issue
+assignees:
+  - steveh259
+body:
+  - type: markdown
+    attributes:
+      value: |
+       Create an issue which is neither a bug report nor a feature request.  
+       If it is, please use another issue template.
+  - type: textarea
+    attributes:
+      label: Description
+    validations:
+      required: true

@@ -1,0 +1,51 @@
+name: Bug Report
+description: File a bug report
+labels: ["bug"]
+assignees:
+  - steveh259
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for submitting a bug report!
+  - type: input
+    attributes:
+      label: Minecraft Version
+      placeholder: e.g. 1.21.8
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Mod Version
+      description: You can find the version in your `mods` folder (shulker-box-labels-`VERSION`) or in the in-game Mods menu.
+      placeholder: e.g. 3.3.0
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Bug Behavior
+      description: Please describe the bug and provide logs if relevant.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: What behavior did you expect? Leave empty if obvious.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Steps To Reproduce
+      description: Please provide steps to reproduce the behavior.
+      placeholder: |
+        Example:  
+         1. Create a new world  
+         2. Place a shulker box  
+         3. 💥
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Anything else?
+      description: If you'd like to add anything else, do so here!
+    validations:
+      required: false
