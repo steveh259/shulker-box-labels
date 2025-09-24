@@ -4,9 +4,6 @@ labels: ["bug"]
 assignees:
   - steveh259
 body:
-  - type: markdown
-    attributes:
-      value: Thank you for submitting a bug report!
   - type: input
     attributes:
       label: Minecraft Version
@@ -20,6 +17,18 @@ body:
       placeholder: e.g. 3.3.0
     validations:
       required: true
+  - type: dropdown
+    attributes:
+      label: Mod Loader
+      multiple: false
+      options:
+        - Fabric
+        - NeoForge
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Mod Loader Version
   - type: textarea
     attributes:
       label: Bug Behavior
